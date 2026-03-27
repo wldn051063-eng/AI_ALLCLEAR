@@ -1,11 +1,11 @@
 {
-  "name": "webapp",
+  "name": "aiallclear",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "wrangler pages dev",
-    "deploy": "npm run build && wrangler pages deploy",
+    "preview": "wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name aiallclear",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
   },
   "dependencies": {
